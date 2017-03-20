@@ -1,0 +1,63 @@
+<graph version="v4.05" name="" author="" interval="1" timeMode="asynchronous" distributionMode="fixed speed" speed="100" actions="1" dice="D6" skill="" strategy="" multiplayer="" width="600" height="560" numberOfRuns="100" visibleRuns="25" colorCoding="1">
+  <connection type="Resource Connection" start="13" end="12" label="" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="14" end="15" label="" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="12" end="24" label="1" position="0.5" color="Gray" thickness="2"/>
+  <connection type="Resource Connection" start="24" end="24" label="" position="0.5" color="Gray" thickness="2"/>
+  <connection type="Resource Connection" start="11" end="8" label="" position="0.5" color="Gray" thickness="2"/>
+  <connection type="State Connection" start="8" end="19" label="*" position="0.5" color="Black" thickness="2"/>
+  <connection type="State Connection" start="12" end="19" label=">0" position="0.5" color="Gray" thickness="2"/>
+  <node symbol="Pool" x="161" y="280" color="Black" caption="Inventario" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" capacity="-1"/>
+  <node symbol="Gate" x="160" y="120" color="Black" caption="falar" thickness="2" captionPos="0.91" activationMode="interactive" pullMode="pull any" actions="1" gateType="deterministic"/>
+  <connection type="Resource Connection" start="11" end="13" label="" position="0.5" color="Gray" thickness="2"/>
+  <connection type="Resource Connection" start="11" end="14" label="" position="0.5" color="Gray" thickness="2"/>
+  <node symbol="Source" x="303" y="56" color="Gray" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Gray"/>
+  <node symbol="Pool" x="251" y="189" color="Black" caption="guarda" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" capacity="-1"/>
+  <node symbol="Gate" x="250" y="115" color="Black" caption="falar" thickness="2" captionPos="0" activationMode="interactive" pullMode="pull any" actions="1" gateType="deterministic"/>
+  <node symbol="Gate" x="390" y="113" color="Black" caption="falar" thickness="2" captionPos="0" activationMode="interactive" pullMode="pull any" actions="1" gateType="deterministic"/>
+  <node symbol="Pool" x="390" y="188" color="Black" caption="cachorro" thickness="2" captionPos="0.75" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" capacity="-1"/>
+  <node symbol="EndCondition" x="97" y="280" color="Black" caption="win" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1"/>
+  <connection type="State Connection" start="7" end="16" label=">7" position="0.5" color="Orange" thickness="2"/>
+  <connection type="Resource Connection" start="19" end="7" label="all" position="0.5" color="Orange" thickness="2"/>
+  <node symbol="Pool" x="160" y="189" color="Black" caption="chefe" thickness="2" captionPos="0.5" activationMode="passive" pullMode="push any" actions="1" resourceColor="Orange" startingResources="8" capacity="-1"/>
+  <connection type="Resource Connection" start="28" end="15" label="" position="0.6900000000000001" color="Purple" thickness="2">
+    <point x="456" y="211"/>
+  </connection>
+  <node symbol="TextLabel" x="487" y="190" color="Purple" caption="beringela"/>
+  <connection type="Resource Connection" start="28" end="15" label="" position="0.5" color="Red" thickness="2">
+    <point x="459" y="126"/>
+  </connection>
+  <node symbol="TextLabel" x="461" y="133" color="Red" caption="morango"/>
+  <node symbol="Drain" x="307" y="141" color="Gray" caption="" thickness="2" captionPos="0.25" activationMode="automatic" pullMode="pull any" actions="1"/>
+  <connection type="State Connection" start="15" end="2" label="&lt;=0" position="0.25" color="Red" thickness="2">
+    <point x="342" y="160"/>
+    <point x="287" y="211"/>
+  </connection>
+  <connection type="State Connection" start="39" end="35" label=">0" position="0.5" color="Black" thickness="2"/>
+  <connection type="State Connection" start="15" end="31" label=">1" position="-0.65" color="Green" thickness="2">
+    <point x="337" y="187"/>
+  </connection>
+  <node symbol="Gate" x="537" y="152" color="Black" caption="dar comida" thickness="2" captionPos="0.75" activationMode="interactive" pullMode="pull any" actions="1" gateType="dice"/>
+  <connection type="State Connection" start="15" end="32" label=">2" position="0.5" color="Purple" thickness="2"/>
+  <node symbol="Source" x="400" y="240" color="Black" caption="OR" thickness="2" captionPos="0.25" activationMode="automatic" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <connection type="Resource Connection" start="30" end="39" label="1" position="0.31" color="Black" thickness="2">
+    <point x="320" y="240"/>
+  </connection>
+  <connection type="Resource Connection" start="30" end="39" label="1" position="0.25" color="Black" thickness="2">
+    <point x="355" y="261"/>
+  </connection>
+  <connection type="Resource Connection" start="30" end="39" label="1" position="-0.4" color="Black" thickness="2">
+    <point x="436" y="268"/>
+  </connection>
+  <connection type="State Connection" start="15" end="33" label="&lt;=0" position="0.5" color="Red" thickness="2">
+    <point x="459" y="254"/>
+  </connection>
+  <node symbol="EndCondition" x="481" y="320" color="Black" caption="game over" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1"/>
+  <connection type="State Connection" start="15" end="33" label=">3" position="-0.61" color="Gray" thickness="2">
+    <point x="473" y="237"/>
+    <point x="464" y="291"/>
+  </connection>
+  <connection type="Resource Connection" start="28" end="15" label="" position="0.5" color="Green" thickness="2"/>
+  <node symbol="TextLabel" x="400" y="360" color="Black" caption="insatisfeito"/>
+  <node symbol="Pool" x="401" y="320" color="Black" caption="cachorro" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Green" startingResources="0" capacity="-1"/>
+  <node symbol="TextLabel" x="467" y="162" color="Green" caption="espinafre"/>
+</graph>

@@ -1,0 +1,10 @@
+<graph version="v4.05" name="" author="" interval="1" timeMode="asynchronous" distributionMode="fixed speed" speed="100" actions="1" dice="D6" skill="" strategy="" multiplayer="" width="600" height="560" numberOfRuns="100" visibleRuns="25" colorCoding="0">
+  <connection type="Resource Connection" start="2" end="6" label="1" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="2" end="3" label="1" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Pool" x="40" y="110" color="Black" caption="A" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="push any" actions="1" resourceColor="Black" startingResources="50" capacity="-1"/>
+  <node symbol="Pool" x="163" y="110" color="Black" caption="C" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" capacity="-1"/>
+  <node symbol="TextLabel" x="101" y="94" color="Green" caption="Rotulo alvo"/>
+  <connection type="State Connection" start="6" end="1" label="+2" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Pool" x="101" y="214" color="Black" caption="B" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" capacity="-1"/>
+  <node symbol="TextLabel" x="178" y="178" color="Blue" caption="Modificador de rotulo"/>
+</graph>

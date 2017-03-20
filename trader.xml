@@ -1,0 +1,11 @@
+<graph version="v4.05" name="" author="" interval="1" timeMode="asynchronous" distributionMode="fixed speed" speed="100" actions="1" dice="D6" skill="" strategy="" multiplayer="" width="600" height="560" numberOfRuns="100" visibleRuns="25" colorCoding="0">
+  <connection type="Resource Connection" start="5" end="7" label="2" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="7" end="6" label="" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="7" end="4" label="" position="0.5" color="Blue" thickness="2"/>
+  <connection type="Resource Connection" start="8" end="7" label="5" position="0.5" color="Blue" thickness="2"/>
+  <node symbol="Pool" x="250" y="54" color="Blue" caption="Exercito" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" capacity="-1"/>
+  <node symbol="Pool" x="248" y="129" color="Black" caption="Dinheiro" thickness="2" captionPos="0.25" activationMode="passive" pullMode="push any" actions="1" resourceColor="Black" startingResources="100" capacity="-1"/>
+  <node symbol="Drain" x="44" y="125" color="Black" caption="dreno" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1"/>
+  <node symbol="Trader" x="152" y="81" color="Black" caption="trocador" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <node symbol="Source" x="47" y="58" color="Blue" caption="fonte" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Blue"/>
+</graph>

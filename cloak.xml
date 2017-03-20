@@ -1,0 +1,66 @@
+<graph version="v4.05" name="" author="" interval="1" timeMode="turn-based" distributionMode="fixed speed" speed="100" actions="1" dice="D6" skill="" strategy="" multiplayer="" width="600" height="560" numberOfRuns="100" visibleRuns="25" colorCoding="1">
+  <connection type="Resource Connection" start="28" end="13" label="" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="13" end="27" label="" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="29" end="15" label="" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="15" end="28" label="" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="28" end="17" label="" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="17" end="29" label="" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="27" end="11" label="" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="11" end="28" label="" position="0.5" color="Black" thickness="2"/>
+  <connection type="State Connection" start="29" end="24" label=">0" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="32" end="30" label="" position="0.5" color="Green" thickness="2"/>
+  <connection type="Resource Connection" start="31" end="32" label="" position="0.5" color="Green" thickness="2"/>
+  <node symbol="Gate" x="178" y="101" color="Black" caption="va para o" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="pull any" actions="1" gateType="deterministic"/>
+  <node symbol="TextLabel" x="180" y="141" color="Black" caption="leste"/>
+  <node symbol="Gate" x="179" y="22" color="Black" caption="va para o" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="pull any" actions="1" gateType="deterministic"/>
+  <node symbol="TextLabel" x="177" y="63" color="Black" caption="oeste"/>
+  <node symbol="Gate" x="340" y="22" color="Black" caption="va para o" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="pull any" actions="1" gateType="deterministic"/>
+  <node symbol="TextLabel" x="343" y="61" color="Black" caption="norte"/>
+  <node symbol="Gate" x="340" y="100" color="Black" caption="va para o" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="pull any" actions="1" gateType="deterministic"/>
+  <node symbol="TextLabel" x="342" y="140" color="Black" caption="sul"/>
+  <connection type="State Connection" start="25" end="20" label=">=3" position="0.5" color="Red" thickness="2"/>
+  <connection type="Resource Connection" start="24" end="40" label="" position="0.5" color="Black" thickness="2"/>
+  <connection type="State Connection" start="27" end="30" label=">0" position="0.5" color="Black" thickness="2">
+    <point x="48" y="60"/>
+    <point x="40" y="224"/>
+  </connection>
+  <connection type="State Connection" start="27" end="31" label=">0" position="-0.71" color="Black" thickness="2">
+    <point x="148" y="160"/>
+  </connection>
+  <connection type="State Connection" start="32" end="24" label="==0" position="0.62" color="Green" thickness="2">
+    <point x="177" y="349"/>
+    <point x="208" y="320"/>
+    <point x="205" y="171"/>
+  </connection>
+  <node symbol="Gate" x="420" y="167" color="Black" caption="ler mensagem" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="pull any" actions="1" gateType="deterministic"/>
+  <node symbol="Pool" x="327" y="253" color="Black" caption="perturbacoes" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" capacity="-1"/>
+  <node symbol="Pool" x="100" y="181" color="Black" caption="gancho" thickness="2" captionPos="0.75" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" capacity="-1"/>
+  <node symbol="Pool" x="102" y="60" color="Blue" caption="Cloakroom" thickness="2" captionPos="0.25" activationMode="passive" pullMode="push any" actions="1" resourceColor="Black" startingResources="0" capacity="-1"/>
+  <node symbol="Pool" x="261" y="60" color="Blue" caption="Foyer" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="1" capacity="-1"/>
+  <node symbol="Pool" x="421" y="59" color="Blue" caption="Bar" thickness="2" captionPos="0.25" activationMode="passive" pullMode="push any" actions="1" resourceColor="Black" startingResources="0" capacity="-1"/>
+  <node symbol="Gate" x="63" y="263" color="Black" caption="pendurar" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="pull any" actions="1" gateType="deterministic"/>
+  <node symbol="Gate" x="142" y="263" color="Black" caption="pegar de voçlta" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="pull any" actions="1" gateType="deterministic"/>
+  <node symbol="Pool" x="100" y="354" color="Black" caption="Inventario" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Green" startingResources="1" capacity="-1"/>
+  <node symbol="TextLabel" x="68" y="15" color="OrangeRed" caption="Cloack of Darkness"/>
+  <connection type="Resource Connection" start="30" end="26" label="" position="-0.43" color="Green" thickness="2"/>
+  <connection type="Resource Connection" start="26" end="31" label="" position="-0.5" color="Green" thickness="2"/>
+  <connection type="Resource Connection" start="37" end="25" label="" position="-0.5" color="Red" thickness="2"/>
+  <node symbol="Source" x="256" y="254" color="Black" caption="qualquer acao" thickness="2" captionPos="0.75" activationMode="interactive" pullMode="pull any" actions="1" resourceColor="Red"/>
+  <connection type="State Connection" start="32" end="37" label="==1" position="0.5" color="Green" thickness="2">
+    <point x="158" y="387"/>
+    <point x="255" y="388"/>
+  </connection>
+  <connection type="State Connection" start="29" end="37" label=">0" position="0.5" color="Black" thickness="2">
+    <point x="339" y="215"/>
+  </connection>
+  <node symbol="EndCondition" x="417" y="255" color="Black" caption="game over" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1"/>
+  <node symbol="EndCondition" x="483" y="254" color="Black" caption="win" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1"/>
+  <connection type="Resource Connection" start="24" end="41" label="" position="0.5" color="Black" thickness="2">
+    <point x="482" y="168"/>
+  </connection>
+  <connection type="State Connection" start="25" end="42" label="&lt;3" position="0.5" color="Red" thickness="2">
+    <point x="360" y="320"/>
+    <point x="520" y="320"/>
+    <point x="519" y="185"/>
+  </connection>
+</graph>

@@ -1,0 +1,9 @@
+<graph version="v4.05" name="" author="" interval="1" timeMode="asynchronous" distributionMode="fixed speed" speed="100" actions="1" dice="D6" skill="" strategy="" multiplayer="" width="600" height="560" numberOfRuns="100" visibleRuns="25" colorCoding="0">
+  <connection type="Resource Connection" start="3" end="4" label="5" position="0.5" color="Black" thickness="2"/>
+  <connection type="State Connection" start="4" end="5" label="*" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="5" end="6" label="2" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Source" x="87" y="59" color="Black" caption="Fonte de soldados" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <node symbol="Pool" x="217" y="60" color="Black" caption="Exercito" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" capacity="-1"/>
+  <node symbol="Pool" x="330" y="62" color="Black" caption="Dinheiro" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="push any" actions="1" resourceColor="Black" startingResources="100" capacity="-1"/>
+  <node symbol="Drain" x="444" y="65" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1"/>
+</graph>
