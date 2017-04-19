@@ -1,0 +1,23 @@
+<graph version="v4.05" name="" author="" interval="1" timeMode="asynchronous" distributionMode="fixed speed" speed="100" actions="1" dice="D6" skill="" strategy="" multiplayer="" width="600" height="560" numberOfRuns="100" visibleRuns="25" colorCoding="1">
+  <node symbol="Trader" x="259" y="130" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <connection type="Resource Connection" start="0" end="16" label="" position="0.5" color="Blue" thickness="2"/>
+  <connection type="Resource Connection" start="0" end="7" label="" position="0.5" color="Gold" thickness="2"/>
+  <connection type="Resource Connection" start="14" end="0" label="" position="0.5" color="Blue" thickness="2"/>
+  <connection type="Resource Connection" start="15" end="0" label="" position="0.5" color="Gold" thickness="2"/>
+  <connection type="Resource Connection" start="12" end="11" label="" position="0.5" color="Black" thickness="2"/>
+  <connection type="State Connection" start="11" end="13" label=">0" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Drain" x="195" y="191" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1"/>
+  <connection type="State Connection" start="16" end="9" label=">0" position="0.5" color="Blue" thickness="2">
+    <point x="147" y="57"/>
+  </connection>
+  <node symbol="Gate" x="343" y="58" color="Black" caption="abrir porta" thickness="2" captionPos="0.75" activationMode="interactive" pullMode="pull any" actions="1" gateType="deterministic"/>
+  <connection type="State Connection" start="9" end="11" label="*" position="0.5" color="Black" thickness="2">
+    <point x="420" y="58"/>
+  </connection>
+  <node symbol="Pool" x="417" y="125" color="Black" caption="porta aberta" thickness="2" captionPos="0.75" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" capacity="-1"/>
+  <node symbol="Pool" x="418" y="185" color="Black" caption="porta fechada" thickness="2" captionPos="0.25" activationMode="passive" pullMode="push any" actions="1" resourceColor="Black" startingResources="1" capacity="-1"/>
+  <node symbol="EndCondition" x="498" y="127" color="Black" caption="vitoria" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1"/>
+  <node symbol="Pool" x="323" y="131" color="Blue" caption="chaveiro" thickness="2" captionPos="0.25" activationMode="passive" pullMode="push any" actions="1" resourceColor="Blue" startingResources="1" capacity="-1"/>
+  <node symbol="Pool" x="259" y="193" color="Gold" caption="dinheiro" thickness="2" captionPos="0.25" activationMode="passive" pullMode="push any" actions="1" resourceColor="Gold" startingResources="5" capacity="-1"/>
+  <node symbol="Pool" x="150" y="133" color="Black" caption="inventario" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" capacity="-1"/>
+</graph>
